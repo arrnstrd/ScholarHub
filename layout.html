@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarHub | Layout</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-shell">
+        <header class="top-header">
+            <button class="icon-btn" id="sidebarToggle" aria-label="Toggle sidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="brand">ScholarHub</div>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+                <span>Dark</span>
+            </button>
+        </header>
+
+        <div class="layout">
+            <aside class="sidebar" id="sidebar">
+                <nav class="nav">
+                    <a class="nav-link active" href="#">
+                        <i class="fas fa-th-large"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-sticky-note"></i>
+                        <span>Pages</span>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-bookmark"></i>
+                        <span>Spaces</span>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-check-square"></i>
+                        <span>Tasks</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <main class="main">
+                <section class="hero">
+                    <h1>Welcome back, Johnny</h1>
+                    <p>Here’s a clean, readable dashboard layout using a natural color architecture. The system supports light and dark themes with smooth transitions.</p>
+                    <p>Use the toggle in the top header to switch themes and see how the surfaces and accents adapt for accessibility.</p>
+                </section>
+
+                <section class="card-grid">
+                    <article class="feature-card">
+                        <h3>Organize workspaces</h3>
+                        <p>Group files, notes, and links into dedicated spaces to stay focused and on track.</p>
+                        <button class="btn">Explore Spaces</button>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Capture ideas</h3>
+                        <p>Create quick pages for long-form notes and keep everything searchable.</p>
+                        <button class="btn">Create Page</button>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Track progress</h3>
+                        <p>Keep tasks visible with a simple, readable overview of what’s next.</p>
+                        <button class="btn">View Tasks</button>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="layout.js"></script>
+</body>
+</html>

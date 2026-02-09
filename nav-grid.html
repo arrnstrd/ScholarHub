@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Grid Layout</title>
+    <link rel="stylesheet" href="nav-grid.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-mark">SH</div>
+            <div class="brand-text">
+                <span class="brand-title">Scholar Hub</span>
+                <span class="brand-subtitle">Workspace</span>
+            </div>
+        </div>
+        <nav class="nav-links" aria-label="Primary">
+            <a class="nav-link is-active" href="#">Overview</a>
+            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#">Library</a>
+            <a class="nav-link" href="#">Calendar</a>
+            <a class="nav-link" href="#">Insights</a>
+        </nav>
+        <div class="nav-foot">
+            <p class="foot-label">Need a hand?</p>
+            <a class="nav-link" href="#">Support</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="main-header">
+            <div>
+                <p class="eyebrow">Dashboard</p>
+                <h1>Natural Glass Layout</h1>
+                <p class="lede">Responsive grid with a fixed sidebar, high-contrast typography, and theme-aware cards.</p>
+            </div>
+            <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">
+                Toggle Theme
+            </button>
+        </header>
+
+        <section class="card-grid" aria-label="Content cards">
+            <article class="card">
+                <p class="card-kicker">Strategy</p>
+                <h2>Quarterly Planning</h2>
+                <p>Define priorities, allocate resources, and track milestones across the team.</p>
+            </article>
+            <article class="card">
+                <p class="card-kicker">Research</p>
+                <h2>Reading List</h2>
+                <p>Curated papers and articles with highlights to revisit during sprint reviews.</p>
+            </article>
+            <article class="card">
+                <p class="card-kicker">Delivery</p>
+                <h2>Shipping Pipeline</h2>
+                <p>Automated QA checks, release notes, and post-release monitoring in one view.</p>
+            </article>
+            <article class="card">
+                <p class="card-kicker">Learning</p>
+                <h2>Workshops</h2>
+                <p>Skill-building sessions with recordings and takeaways for the broader org.</p>
+            </article>
+            <article class="card">
+                <p class="card-kicker">Community</p>
+                <h2>Peer Reviews</h2>
+                <p>Lightweight peer review flow with checklists that guard against regressions.</p>
+            </article>
+            <article class="card">
+                <p class="card-kicker">Data</p>
+                <h2>Analytics</h2>
+                <p>Usage trends, retention insights, and anomaly alerts to keep momentum steady.</p>
+            </article>
+            <article class="card">
+                <p class="card-kicker">Support</p>
+                <h2>Inbox Triage</h2>
+                <p>Queue of requests with SLAs and ownership to ensure timely responses.</p>
+            </article>
+            <article class="card">
+                <p class="card-kicker">Docs</p>
+                <h2>Knowledge Base</h2>
+                <p>Single source of truth for onboarding, architectural decisions, and runbooks.</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="nav-grid.js"></script>
+</body>
+</html>
